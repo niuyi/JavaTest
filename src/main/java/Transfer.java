@@ -81,4 +81,21 @@ public class Transfer {
         chars[l] = chars[r];
         chars[r] = temp;
     }
+
+    public static int stringToInt(String s){
+        int size = s.length();
+        int val = 0;
+        for(int i = 0 ; i < size ; i++){
+            char c = s.charAt(i);
+            double pow = Math.pow(10, size - i - 1);
+            Integer integer = Integer.valueOf(new String(new char[]{c}));
+            val += integer * pow;
+        }
+
+        return val;
+    }
+
+    public static void swap(int a , int b){
+        a = b -a;
+    }
 }

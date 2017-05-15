@@ -20,6 +20,8 @@ public class Main {
         System.out.println(Transfer.revert("abcdef"));
         System.out.println(Transfer.checkReverse("abcdef", "fedcbb"));
         Transfer.permutation("abc");
+
+        System.out.println(Transfer.stringToInt("123"));
 //        byte b = 127;
 //        System.out.print(new byte[b, b, b, b]);
 
